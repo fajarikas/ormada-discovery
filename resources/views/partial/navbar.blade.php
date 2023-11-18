@@ -17,7 +17,7 @@
                 </p>
                 <p>
                     <a class="hover:text-green-4 transition-all duration-100 delay-100 ease-out"
-                        href="{{ url('/#section3') }}">Ormada
+                        href="{{ url('/ormada') }}">Ormada
                         Expo</a>
                 </p>
                 @auth
@@ -44,7 +44,7 @@
     <div class="flex justify-between items-center">
         <div class="flex items-center gap-2">
             <img src="{{ url('/images/5.Logo Ormada UNY.png') }}" class="w-12" alt="" />
-            <p>Ormada Expo</p>
+            <p>Ormada Discovery</p>
         </div>
 
         <div>
@@ -60,19 +60,20 @@
     <div class="hidden" id="navbar">
         <div class="mx-8 my-5 block">
             <p class="">
-                <a class="hover:text-green-4 transition-all duration-100 delay-100 ease-out" href="#section1">Home</a>
+                <a class="hover:text-green-4 transition-all duration-100 delay-100 ease-out"
+                    href="{{ url('/#section1') }}">Home</a>
             </p>
             <p class="mt-2">
                 <a class="mt-5 hover:text-green-4 transition-all duration-100 delay-100 ease-out"
-                    href="#section2">About</a>
+                    href="{{ url('/#section2') }}">About</a>
             </p>
             <p class="mt-2">
                 <a class="mt-5 hover:text-green-4 transition-all duration-100 delay-100 ease-out"
-                    href="#section3">Ormada Discovery</a>
+                    href="{{ url('/ormada') }}">Ormada Discovery</a>
             </p>
             <p class="mt-4">
                 <a class="px-[40px] py-1 border-2 border-green-2 hover:bg-green-2 hover:text-white transition-all duration-50 delay-100 ease-in rounded-full"
-                    href="#">Login</a>
+                    href="{{ url('/login') }}">Login</a>
             </p>
         </div>
     </div>
