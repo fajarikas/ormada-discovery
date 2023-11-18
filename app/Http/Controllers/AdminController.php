@@ -88,7 +88,7 @@ class AdminController extends Controller
         $ormada->save();
 
 
-        return redirect('admin.dashboard')->with('status', 'Ormada berhasil diubah!');
+        return redirect('dashboard')->with('status', 'Ormada berhasil diubah!');
     }
 
     public function destroy($id)

@@ -15,9 +15,9 @@ class OrmadaDiscoveryController extends Controller
                 ->orWhere('regional', 'LIKE', '%' . request('search') . '%')
                 ->orWhere('instagram', 'LIKE', '%' . request('search') . '%')
                 ->orderBy('regional', 'ASC')
-                ->paginate(5);
+                ->paginate(10000);
         } else {
-            $ormada = Ormada::orderBy('regional', 'ASC')->paginate(5);
+            $ormada = Ormada::orderBy('regional', 'ASC')->paginate(10000);
         }
         // return view('admin.dashboard', ['ormada' => $ormada]);
         return view('page.ormadaDiscoveryPage', ['ormada' => $ormada]);
